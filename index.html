@@ -5,14 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoppingList</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    
+    <script src="https://kit.fontawesome.com/3acb3d5ae8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
+    <div id="app" class="container w-100">
+      <div class="container border rounded w-100">
+        <div class="d-flex justify-content-between">
+          <h2 class="text-secondary">Shopping List</h2>
+          <!-- Modal Add Button -->
+          <button type="button" class="btn btn-primary">ADD <i class="fas fa-plus"></i></button>
+
+          <!-- Modal Add Form -->
+          
+
+        </div>
+        <div id="shopping-list-items">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex">
+              <h5 class="col name-item text-info">Carottes</h5>
+              <div class="col">
+                <h6 class="col">2€</h6>
+                <h6 class="col">6</h6>
+              </div>
+              <div class="col-2 btn-group">
+                <button class="btn btn-success btn-small"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-danger btn-small"><i class="fas fa-trash-alt"></i></button>
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <h5 class="col name-item text-info">Nutella</h5>
+              <div class="col">
+                <h6 class="col">4€</h6>
+                <h6 class="col">2</h6>
+              </div>
+              <div class="col-2 btn-group">
+                <button class="btn btn-success"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <h5 class="col name-item text-info">Entrecôte</h5>
+              <div class="col">
+                <h6 class="col" aria-label="prix">18€</h6>
+                <h6 class="col">1</h6>
+              </div>
+              <div class="col-2 btn-group">
+                <button class="btn btn-success"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="container d-flex justify-content-center m-1">
+          <div id="total-shopping" class="border border-warning rounded px-5">Total</div>
+        </div>
+        <div class="container d-flex justify-content-center m-1">
+          <button class="btn btn-outline-primary btn-lg">PAYER</button>
+        </div>
+      </div>
+    </div>
+
 
     <script src="js/vendors.js"></script>
 
     <script src="js/app.js"></script>
     <script src="js/index.js"></script>
+
   </body>
 </html>
