@@ -29,3 +29,11 @@
   - Possibilité d'éditer (quantité, prix) ou supprimer un produit 
   - Afficher le montant total de la liste
   - Bouton d'achat ( "Payer")
+
+## TODO
+
+- HTML:
+
+  - Ajouter modal Add
+  - Ajouter modal Edit
+  - Ajouter label pour le prix et la quantité des produits de la liste
