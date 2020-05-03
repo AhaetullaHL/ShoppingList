@@ -8,49 +8,77 @@
     <script src="https://kit.fontawesome.com/3acb3d5ae8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    
-    <div id="app" class="container w-100">
+
+    <div id="app" class="container w-100 mx-0">
       <div class="container border rounded w-100">
         <div class="d-flex justify-content-between">
           <h2 class="text-secondary">Shopping List</h2>
           <!-- Modal Add Button -->
-          <button type="button" class="btn btn-primary">ADD <i class="fas fa-plus"></i></button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">ADD <i class="fas fa-plus"></i></button>
 
           <!-- Modal Add Form -->
-          
+          <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addArticleModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="addArticleModal">Ajouter un article</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Example label</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Another label</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Ajouter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
-        <div id="shopping-list-items">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item d-flex">
-              <h5 class="col name-item text-info">Carottes</h5>
-              <div class="col">
+        <div id="shopping-list-items" class="col px-0">
+          <ul class="list-group list-group-flush d-flex">
+            <li class="list-group-item d-flex px-0">
+              <h5 class="col-4 name-item text-info">Carottes</h5>
+              <div class="col-4">
                 <h6 class="col">2€</h6>
                 <h6 class="col">6</h6>
               </div>
-              <div class="col-2 btn-group">
+              <div class="col-2 btn-group px-0">
                 <button class="btn btn-success btn-small"><i class="fas fa-edit"></i></button>
                 <button class="btn btn-danger btn-small"><i class="fas fa-trash-alt"></i></button>
               </div>
             </li>
-            <li class="list-group-item d-flex">
-              <h5 class="col name-item text-info">Nutella</h5>
-              <div class="col">
+            <li class="list-group-item d-flex px-0">
+              <h5 class="col-4 name-item text-info">Nutella</h5>
+              <div class="col-4">
                 <h6 class="col">4€</h6>
                 <h6 class="col">2</h6>
               </div>
-              <div class="col-2 btn-group">
+              <div class="col-2 btn-group px-0">
                 <button class="btn btn-success"><i class="fas fa-edit"></i></button>
                 <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
               </div>
             </li>
-            <li class="list-group-item d-flex">
-              <h5 class="col name-item text-info">Entrecôte</h5>
-              <div class="col">
+            <li class="list-group-item d-flex px-0">
+              <h5 class="col-4 name-item text-info">Entrecôte</h5>
+              <div class="col-4">
                 <h6 class="col" aria-label="prix">18€</h6>
                 <h6 class="col">1</h6>
               </div>
-              <div class="col-2 btn-group">
+              <div class="col-2 btn-group px-0">
                 <button class="btn btn-success"><i class="fas fa-edit"></i></button>
                 <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
               </div>
